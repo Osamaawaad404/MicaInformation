@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1E3A8A;
+  --secondary-color: #F59E0B;
+  --neutral-color: #F3F4F6;
+  --text-color: #1F2937;
+  --accent-color: #10B981;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  color: var(--text-color);
+  direction: rtl;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  @apply bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 transition-colors;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.section {
+  @apply py-12;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
